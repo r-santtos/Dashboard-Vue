@@ -30,15 +30,15 @@ O app estará disponível no seu browser pelo endereço http://localhost:8080.
 
 ## 💻 Projeto
 
-Este projeto foi desenvolvido para aplicação de estudos em tecnologia, é composto por uma tela inicial, outras duas “sobre” e “contato”.
+Projeto de estudo, desenvolvendo um dashboard financeiro para acompanhar a cotação do mercado financeiro brasileiro e mundial.
 
-O sistema de roteamento, a aplicação de typescript e consultas externas à API e PWA foram a base do estudo.
+Foi usando Vue.Js como front-end e o [Vue.js Router](https://router.vuejs.org/) para fazer o roteamento das páginas.
 
 ## 🔖 Layout
 
 Você pode visualizar o layout do projeto através do link abaixo:
 
-- [Layout Web](https://vue-dash-youtube.vercel.app/) 
+- [Layout Web](https://dashboard-r-santtos.vercel.app/) 
 
 ## 📝 License
 
