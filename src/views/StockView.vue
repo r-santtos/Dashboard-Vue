@@ -1,6 +1,6 @@
 <template>
   <div class="stock">
-    <h1>This is an StockView page</h1>
+    <h1>StockView </h1>
   </div>
 </template>
 
@@ -11,3 +11,11 @@
     name: 'StockView',
   });
 </script>
+
+<style lang="scss" scoped>
+  .stock {
+    padding: 1rem;
+    width: calc(100% - (2rem + 32px));
+    display: flex;
+  }
+</style>

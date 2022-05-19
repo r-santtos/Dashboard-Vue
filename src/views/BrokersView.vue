@@ -1,6 +1,6 @@
 <template>
   <div class="brokers">
-    <h1>This is an BrokersView page</h1>
+    <h1>BrokersView BrokersView BrokersView BrokersView</h1>
   </div>
 </template>
 
@@ -11,3 +11,11 @@
     name: 'BrokersView',
   });
 </script>
+
+<style lang="scss" scoped>
+  .brokers {
+    padding: 1rem;
+    width: calc(100% - (2rem + 32px));
+    display: flex;
+  }
+</style>

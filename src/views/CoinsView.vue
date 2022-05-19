@@ -11,3 +11,11 @@
     name: 'CoinsView',
   });
 </script>
+
+<style lang="scss" scoped>
+  .coins {
+    padding: 1rem;
+    width: calc(100% - (2rem + 32px));
+    display: flex;
+  }
+</style>

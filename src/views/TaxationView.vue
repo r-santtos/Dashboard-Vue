@@ -1,6 +1,6 @@
 <template>
   <div class="taxation">
-    <h1>This is an TaxationView page</h1>
+    <h1>TaxationView</h1>
   </div>
 </template>
 
@@ -11,3 +11,11 @@
     name: 'TaxationView',
   });
 </script>
+
+<style lang="scss" scoped>
+  .taxation {
+    padding: 1rem;
+    width: calc(100% - (2rem + 32px));
+    display: flex;
+  }
+</style>
