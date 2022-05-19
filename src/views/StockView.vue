@@ -25,6 +25,22 @@
 
   export default defineComponent({
     name: 'StockView',
+    data() {
+      return {
+        financial: [],
+      };
+    },
+    mounted() {
+      fetch('https://raw.githubusercontent.com/r-santtos/Axios-Api-Vue/main/src/services/social.json')
+        .then(response => response.json())
+        .then(data => {
+          this.financial = data;
+          console.log(data);
+        })
+        .catch(error => {
+          console.log(error);
+        });
+    },
   });
 </script>
 
