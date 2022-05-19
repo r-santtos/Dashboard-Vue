@@ -2,18 +2,24 @@
   <div class="stock">
     <h1>Stock Exchange</h1>
     <section class="container-grid cards">
-      <div class="container card">
+      <div
+        v-for="(stocks, index) in stocks" :key="index"
+        class="container card"
+      >
         <div class="container-row title">
-          <span>usd</span>
-          <span>125656</span>
+          <span>Variation</span>
+          <span>{{
+            new Intl.NumberFormat('pt-BR', { style: 'percent', currency: 'URD', maximumFractionDigits: 4 }).format(stocks.variation)
+          }}</span>
         </div>
 
         <div class="container">
-          <span>USE 1356</span>
+          <span>{{new Intl.NumberFormat('pt-BR', { style: 'decimal', currency: 'BRL' }).format(stocks.points)}}
+          </span>
         </div>
 
-        <div class="container subtitle">
-          <span>titlo</span>
+        <div class="container-row subtitle">
+          <span>{{stocks.name}}</span>
         </div>
       </div>
     </section>
@@ -27,19 +33,23 @@
     name: 'StockView',
     data() {
       return {
-        financial: [],
+        stocks: {
+          type: Array,
+          default: () => [],
+        },
       };
     },
     mounted() {
-      fetch('https://raw.githubusercontent.com/r-santtos/Axios-Api-Vue/main/src/services/social.json')
+      fetch('https://api.hgbrasil.com/finance?key=2562ce77')
         .then(response => response.json())
         .then(data => {
-          this.financial = data;
-          console.log(data);
+          this.stocks = data.results.stocks;
+          console.log(this.stocks);
         })
         .catch(error => {
           console.log(error);
-        });
+        }
+      );
     },
   });
 </script>

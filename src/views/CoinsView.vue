@@ -2,18 +2,22 @@
   <div class="coins">
     <h1>Coins</h1>
     <section class="container-grid cards">
-      <div class="container card">
+      <div class="container card" v-for="(currencies, index) in currencies" :key="index">
         <div class="container-row title">
-          <span>usd</span>
-          <span>125656</span>
+          <span>{{currencies.name}}</span>
+          <span>{{currencies.variation}}</span>
         </div>
 
-        <div class="container">
-          <span>USE 1356</span>
+        <div class="container-row" style="width: 100%">
+          <span>{{new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(currencies.buy)}}
+          </span>
+          <span>{{new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(currencies.sell)}}
+          </span>
         </div>
 
-        <div class="container subtitle">
-          <span>titlo</span>
+        <div class="container-row subtitle">
+          <span>buy</span>
+          <span>sell</span>
         </div>
       </div>
     </section>
@@ -25,6 +29,26 @@
 
   export default defineComponent({
     name: 'CoinsView',
+    data() {
+      return {
+        currencies: {
+          type: Array,
+          default: () => [],
+        },
+      };
+    },
+    mounted() {
+      fetch('https://api.hgbrasil.com/finance?key=2562ce77')
+        .then(response => response.json())
+        .then(data => {
+          this.currencies = data.results.currencies;
+          console.log(this.currencies);
+        })
+        .catch(error => {
+          console.log(error);
+        }
+      );
+    },
   });
 </script>
 

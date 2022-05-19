@@ -1,88 +1,88 @@
 {
   "by": "default",
-  "valid_key": false,
+  "valid_key": true,
   "results": {
     "currencies": {
       "source": "BRL",
       "USD": {
         "name": "Dollar",
-        "buy": 4.8898,
-        "sell": 4.892,
-        "variation": -1.6
+        "buy": 4.9201,
+        "sell": 4.9201,
+        "variation": -0.99
       },
       "EUR": {
         "name": "Euro",
-        "buy": 5.18,
-        "sell": 5.1825,
-        "variation": -0.352
+        "buy": 5.2087,
+        "sell": 5.211,
+        "variation": 0.199
       },
       "GBP": {
         "name": "Pound Sterling",
-        "buy": 6.107,
+        "buy": 6.1451,
         "sell": null,
-        "variation": -0.394
+        "variation": 0.227
       },
       "ARS": {
         "name": "Argentine Peso",
-        "buy": 0.0413,
+        "buy": 0.0416,
         "sell": null,
-        "variation": -1.854
+        "variation": -1.244
       },
       "CAD": {
         "name": "Canadian Dollar",
-        "buy": 3.8165,
+        "buy": 3.837,
         "sell": null,
-        "variation": -1.002
+        "variation": -0.469
       },
       "AUD": {
         "name": "Australian Dollar",
-        "buy": 3.4509,
+        "buy": 3.4703,
         "sell": null,
-        "variation": -0.151
+        "variation": 0.411
       },
       "JPY": {
         "name": "Japanese Yen",
-        "buy": 0.0383,
+        "buy": 0.0385,
         "sell": null,
-        "variation": -1.253
+        "variation": -0.736
       },
       "CNY": {
         "name": "Renminbi",
-        "buy": 0.7284,
+        "buy": 0.7329,
         "sell": null,
-        "variation": -0.996
+        "variation": -0.382
       },
       "BTC": {
         "name": "Bitcoin",
-        "buy": 155714.163,
-        "sell": 155714.163,
-        "variation": 2.676
+        "buy": 156668.627,
+        "sell": 156668.627,
+        "variation": 2.669
       }
     },
     "stocks": {
       "IBOVESPA": {
         "name": "BM&F BOVESPA",
         "location": "Sao Paulo, Brazil",
-        "points": 107027.08,
-        "variation": 0.73
+        "points": 107185.75,
+        "variation": 0.88
       },
       "IFIX": {
         "name": "Índice de Fundos de Investimentos Imobiliários B3",
         "location": "Sao Paulo, Brazil",
-        "points": 2777.32,
-        "variation": -0.01
+        "points": 2779.77,
+        "variation": 0.08
       },
       "NASDAQ": {
         "name": "NASDAQ Stock Market",
         "location": "New York City, United States",
-        "points": 11418.58,
-        "variation": 0.0
+        "points": 11388.5,
+        "variation": -0.26
       },
       "DOWJONES": {
         "name": "Dow Jones Industrial Average",
         "location": "New York City, United States",
-        "points": 31279.93,
-        "variation": -0.67
+        "points": 31253.13,
+        "variation": -0.75
       },
       "CAC": {
         "name": "CAC 40",
@@ -100,8 +100,68 @@
     "available_sources": [
       "BRL"
     ],
+    "bitcoin": {
+      "blockchain_info": {
+        "name": "Blockchain.info",
+        "format": [
+          "USD",
+          "en_US"
+        ],
+        "last": 29994.21,
+        "buy": 29994.21,
+        "sell": 29994.21,
+        "variation": 2.512
+      },
+      "coinbase": {
+        "name": "Coinbase",
+        "format": [
+          "USD",
+          "en_US"
+        ],
+        "last": 30009.59,
+        "variation": 2.515
+      },
+      "bitstamp": {
+        "name": "BitStamp",
+        "format": [
+          "USD",
+          "en_US"
+        ],
+        "last": 30024.46,
+        "buy": 30024.46,
+        "sell": 30011.62,
+        "variation": 2.588
+      },
+      "foxbit": {
+        "name": "FoxBit",
+        "format": [
+          "BRL",
+          "pt_BR"
+        ],
+        "last": 351098.91,
+        "variation": -1.885
+      },
+      "mercadobitcoin": {
+        "name": "Mercado Bitcoin",
+        "format": [
+          "BRL",
+          "pt_BR"
+        ],
+        "last": 148604.02154,
+        "buy": 148607.50158454,
+        "sell": 148791.91349,
+        "variation": 1.279
+      }
+    },
     "taxes": [
-      
+      {
+        "date": "2022-05-18",
+        "cdi": 12.75,
+        "selic": 12.75,
+        "daily_factor": 1.00047279,
+        "selic_daily": 12.65,
+        "cdi_daily": 12.65
+      }
     ]
   },
   "execution_time": 0.0,
