@@ -38,7 +38,7 @@
       };
     },
     mounted() {
-      fetch('https://api.hgbrasil.com/finance?key=2562ce77')
+      fetch('https://raw.githubusercontent.com/r-santtos/Dashboard-Vue/main/src/api/fin.json')
         .then(response => response.json())
         .then(data => {
           this.currencies = data.results.currencies;
