@@ -24,7 +24,7 @@ export default defineComponent({
     --grey: #64748b;
     --dark: #1e293b;
     --light: #f1f5f9;
-    --sidebar-width: 300px;
+    --sidebar-width: 250px;
   }
   * {
     margin: 0;
@@ -44,15 +44,12 @@ export default defineComponent({
   }
   .app {
     display: flex;
-
     main {
       flex: 1 1 0;
       padding: 2rem;
-    }
 
-    @media (max-width: 768px) {
-      .app {
-        padding-left: 6rem;
+      @media (min-width: 768px) {
+        padding: 6rem;
       }
     }
   }
